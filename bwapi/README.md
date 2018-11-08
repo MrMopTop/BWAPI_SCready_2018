@@ -9,6 +9,8 @@ Below is the very outdated README for BWAPI. The files in this repository should
     ----Also run in WIN mode if you want Starcraft in a window instead of fullscreen
 5) Start your bot and have fun!
 
+--MrMopTop
+
 # The Brood War API {#BWAPI}
 
 [![Build status](https://ci.appveyor.com/api/projects/status/6eikd5g49co6l5ty/branch/develop?svg=true)](https://ci.appveyor.com/project/heinermann/bwapi/branch/develop)
