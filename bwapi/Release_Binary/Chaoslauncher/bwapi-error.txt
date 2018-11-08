@@ -1,0 +1,12 @@
+[2018-10-21 13:50:53] Unable to find C:\Users\Benjamin\Documents\Starcraft 1.16\bwapi-data\BWAPI.dll.
+ID 00000003: 
+The system cannot find the path specified.
+
+[2018-10-21 13:53:02] Unable to find C:\Users\Benjamin\Documents\Starcraft 1.16\bwapi-data\BWAPI.dll.
+ID 00000003: 
+The system cannot find the path specified.
+
+[2018-10-21 13:54:06] Unable to open BWAPI config file.
+ID 00000002: 
+The system cannot find the file specified.
+
