@@ -1,3 +1,14 @@
+## Forward
+
+Below is the very outdated README for BWAPI. The files in this repository should be ready for a Windows 10 machine with the current SDK. Starcraft 1.16.1 and Chaoslauncher are loaded in the files and should run. To start:
+
+1) Download this repository.
+2) Open current Visual Studio version and the .sln file in the vs directory.
+3) Build both Release and Debug versions.
+4) Lauch the Chaoslauncher and inject the correct version (release vs. debug).
+    ----Also run in WIN mode if you want Starcraft in a window instead of fullscreen
+5) Start your bot and have fun!
+
 # The Brood War API {#BWAPI}
 
 [![Build status](https://ci.appveyor.com/api/projects/status/6eikd5g49co6l5ty/branch/develop?svg=true)](https://ci.appveyor.com/project/heinermann/bwapi/branch/develop)
