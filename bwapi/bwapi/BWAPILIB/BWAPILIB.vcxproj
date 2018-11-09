@@ -163,7 +163,9 @@ XCOPY "$(SolutionDir)Shared\*.h" "$(SolutionDir)..\Release_Binary\Shared" /S /C 
     </Lib>
     <PostBuildEvent>
       <Message>Copying BWAPI library to Developer folder</Message>
-      <Command>COPY /y "$(OutDir)$(TargetName)$(TargetExt)" "$(SolutionDir)..\Release_Binary\lib\BWAPId.lib"
+      <Command>if not exist $(SolutionDir)..\Release_Binary\lib mkdir $(SolutionDir)..\Release_Binary\lib
+if not exist ..\lib mkdir ..\lib
+COPY /y "$(OutDir)$(TargetName)$(TargetExt)" "$(SolutionDir)..\Release_Binary\lib\BWAPId.lib"
 COPY /y "$(OutDir)$(TargetName)$(TargetExt)" "..\lib\BWAPId.lib"
 COPY /y "$(OutDir)BWAPILibd.pdb" "$(SolutionDir)..\Release_Binary\lib\BWAPILibd.pdb"
 COPY /y "$(OutDir)BWAPILibd.pdb" "..\lib\BWAPILibd.pdb"

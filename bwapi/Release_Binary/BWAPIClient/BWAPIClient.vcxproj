@@ -59,7 +59,9 @@
     </ClCompile>
     <Lib />
     <PostBuildEvent>
-      <Command>COPY /y "$(OutDir)$(TargetName)$(TargetExt)" "$(SolutionDir)..\Release_Binary\lib\BWAPIClientd.lib"
+      <Command>if not exist $(SolutionDir)..\Release_Binary\lib mkdir $(SolutionDir)..\Release_Binary\lib
+if not exist ..\lib mkdir ..\lib
+COPY /y "$(OutDir)$(TargetName)$(TargetExt)" "$(SolutionDir)..\Release_Binary\lib\BWAPIClientd.lib"
 COPY /y "$(OutDir)BWAPIClientd.pdb" "$(SolutionDir)..\Release_Binary\lib\BWAPIClientd.pdb"
 COPY /y "$(OutDir)$(TargetName)$(TargetExt)" "..\lib\BWAPIClientd.lib"
 COPY /y "$(OutDir)BWAPIClientd.pdb" "..\lib\BWAPIClientd.pdb"
